@@ -1,1 +1,15 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/cdomgBmc)
+# TritonTube
+
+Technologies:
+- Go (Golang)
+- gRPC
+- Protocol Buffers
+- SQLite
+
+TritonTube is a distributed video storage system that horizontally scales video content across multiple storage servers using consistent hashing. Video files are stored on seperate storage nodes, and the system supports dynamic addition/removal of nodes with automatic file migration. All communication is implemented using **gRPC** with **protobuf**.
+
+Features:
+- Designed and implemented gRPC APIs for file storage and cluster administration
+- Built a consistent hashing based storage layer for dynamic video distribution
+- Supports automatic file migration
+- Videos are parsed with ffmpeg and MPEG-DASH
